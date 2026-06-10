@@ -10,16 +10,6 @@ For detailed changes, please refer to the [Change log](CHANGELOG.md).
 
 ## INSTALLATION
 
-### CocoaPods
-
-[CocoaPods](https://cocoapods.org) is a dependency manager for Swift and Objective-C Cocoa projects.
-
-To incorporate the **ProgressHUD** library into your Xcode project utilizing CocoaPods, please reference it within your `Podfile` as shown below:
-
-```ruby
-pod 'ProgressHUD'
-```
-
 ### Swift Package Manager
 
 [Swift Package Manager](https://swift.org/package-manager) is a tool for managing the distribution of Swift code.
