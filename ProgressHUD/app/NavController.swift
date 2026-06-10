@@ -16,7 +16,9 @@ class NavigationController: UINavigationController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
-		isModalInPresentation = true
+        if #available(iOS 13.0, *) {
+            isModalInPresentation = true
+        }
 		modalPresentationStyle = .fullScreen
 
 		navigationBar.isTranslucent = true

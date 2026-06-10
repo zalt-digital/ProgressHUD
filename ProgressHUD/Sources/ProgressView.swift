@@ -13,7 +13,7 @@ import UIKit
 
 class ProgressView: UIView {
 
-	var color: UIColor = .systemBackground {
+	var color: UIColor = .compatSystemBackground {
 		didSet { setupLayers() }
 	}
 

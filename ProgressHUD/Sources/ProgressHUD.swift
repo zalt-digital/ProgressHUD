@@ -22,12 +22,12 @@ public class ProgressHUD: UIView {
 	var observerBanner: NSObjectProtocol?
 
 	var textBannerTitle = ""
-	var colorBannerTitle = UIColor.label
+	var colorBannerTitle = UIColor.compatLabel
 	var fontBannerTitle = UIFont.boldSystemFont(ofSize: 16)
 	var labelBannerTitle: UILabel?
 
 	var textBannerMessage = ""
-	var colorBannerMessage = UIColor.secondaryLabel
+	var colorBannerMessage = UIColor.compatSecondaryLabel
 	var fontBannerMessage = UIFont.systemFont(ofSize: 14)
 	var labelBannerMessage: UILabel?
 
@@ -50,13 +50,13 @@ public class ProgressHUD: UIView {
 
 	var colorBackground	= UIColor(red: 0, green: 0, blue: 0, alpha: 0.2)
 	var colorHUD		= UIColor.systemGray
-	var colorStatus		= UIColor.label
+	var colorStatus		= UIColor.compatLabel
 	var colorProgress	= UIColor.lightGray
 	var colorAnimation	= UIColor.lightGray
 
 	var fontStatus		= UIFont.boldSystemFont(ofSize: 24)
-	var imageSuccess	= UIImage.checkmark.withTintColor(UIColor.systemGreen, renderingMode: .alwaysOriginal)
-	var imageError		= UIImage.remove.withTintColor(UIColor.systemRed, renderingMode: .alwaysOriginal)
+	var imageSuccess	= UIImage.compatCheckmark.compatTinted(UIColor.systemGreen)
+	var imageError		= UIImage.compatRemove.compatTinted(UIColor.systemRed)
 
 	var didSetupNotifications	= false
 	let keyboardWillShow		= UIResponder.keyboardWillShowNotification

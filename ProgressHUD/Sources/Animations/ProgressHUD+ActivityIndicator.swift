@@ -15,7 +15,7 @@ import UIKit
 extension ProgressHUD {
 
 	func animationActivityIndicator(_ view: UIView, _ color: UIColor) {
-		let spinner = UIActivityIndicatorView(style: .large)
+		let spinner = UIActivityIndicatorView(style: .compatLarge)
 		let scale = view.frame.size.width / spinner.frame.size.width
 		spinner.transform = CGAffineTransform(scaleX: scale, y: scale)
 		spinner.frame = view.bounds

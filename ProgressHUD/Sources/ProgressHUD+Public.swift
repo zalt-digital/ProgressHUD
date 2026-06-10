@@ -165,8 +165,8 @@ public extension ProgressHUD {
 
 	class func show(_ text: String? = nil, symbol: String, interaction: Bool = true, delay: TimeInterval? = nil) {
 		DispatchQueue.main.async {
-			let image = UIImage(systemName: symbol) ?? UIImage(systemName: "questionmark")
-			let colored = image?.withTintColor(shared.colorAnimation, renderingMode: .alwaysOriginal)
+			let image = UIImage.compatSymbol(symbol) ?? UIImage.compatSymbol("questionmark")
+			let colored = image?.compatTinted(shared.colorAnimation)
 			shared.setup(text: text, staticImage: colored, interaction: interaction, delay: delay)
 		}
 	}

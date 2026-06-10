@@ -4,7 +4,7 @@ import PackageDescription
 let package = Package(
     name: "ProgressHUD",
     platforms: [
-        .iOS(.v13),
+        .iOS(.v12),
     ],
     products: [
         .library(

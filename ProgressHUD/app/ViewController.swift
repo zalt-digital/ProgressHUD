@@ -10,6 +10,7 @@
 // THE SOFTWARE.
 
 import UIKit
+import ProgressHUD
 
 // MARK: - AnimationType
 extension AnimationType {
